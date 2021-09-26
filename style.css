@@ -1,0 +1,263 @@
+/*raccourcis*/
+
+.flexCentre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body{
+    margin: 0px;
+}
+
+.backgris{
+    background-color: #f2f2f2;
+}
+
+.backbleu{
+    background-color: #0065fc;
+}
+
+/*Logo*/
+
+.haut{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Reservia{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+}
+
+/*Menu*/
+
+.Menu1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.Menu2{
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.gris1{
+    color: gray;
+}
+
+.bleu1{
+    display: flex;
+    border: solid 2px;
+    color: #0065fc;
+    border-right: white;
+    border-left: white;
+    border-bottom: white;
+}
+
+.bleu2{
+    color: #0065fc;
+}
+
+.bleu1, .bleu2, .gris1{
+    padding: 15px;
+}
+
+/*Libellé*/
+
+.libellé1{
+    left: 35px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.libellé2{
+    font-size: 15px;
+    font-style: italic;
+}
+
+#libellé{
+    line-height: initial;
+    line-height: 3px;
+}
+
+/*Barre de recherche*/
+
+.iconSize {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px 0 0 10px;
+  }
+
+.bordureSearch {
+    width: 400px;
+    border-radius: 10px;
+    border: 0.5px solid #f2f2f2;
+}
+
+.recherche input {
+    height: 50px;
+    width: 250px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.bordureNone {
+    border: none;
+}
+
+.buttonSearch {
+    height: 50px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+
+/*Filtres*/
+
+.Filtres{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.titrefiltre{
+    margin-right: 20px;
+}
+
+.Economique, .Romantique, .Familial, .Animaux{
+    display: flex;
+    margin-right: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid #f2f2f2;
+    height: 50px;
+}
+
+.filtreTexte{
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+}
+
+.FiltreIcons{
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    color: #0065fc;
+    background-color: #deebff;
+}
+
+.FiltreIcons1{
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    color: #0065fc;
+}
+
+/* plus de [...]*/
+
+.iconPlus{
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.petit{
+    font-size: 15px;
+    font-style: italic;
+    font-family: "raleway";
+}
+
+.petit i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: solid #f2f2f2;
+    width: 20px;
+    height: 20px;
+    color: #0065fc;
+}
+
+/*hébergement à marseille*/
+
+.boite1{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 150px;
+    width: 230px;
+    border: solid white;
+    border-radius: 20px;
+    border-width: 1px;
+    margin-left: 15px;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+
+.Enonce1{
+    display: flex;
+    margin: none;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.Enonce1 h3{
+    font-size: 15px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.Enonce1 p {
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.img1 img{
+    border-radius: 10px 10px 0 0;
+    height: 100px;
+    width: 250px;
+    margin: 0;
+}
+
+.img1{
+    display: flex;
+    justify-content: center;
+}
+
+.Heberg{
+    flex: 2;
+    margin-right: 20px;
+    border-radius: 10px;
+    height: 650px;
+}
+
+/*Les plus populaires*/
+
+.LPPOP{
+    flex: 1;
+    margin-left: 20px;
+    border-radius: 10px;
+    height: 650px;
+}
