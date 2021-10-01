@@ -1,0 +1,33 @@
+.HM, img{
+    width: 200px;
+    height: 200px;
+}
+
+.HM{
+    display: flex;
+
+}
+    
+body, html{
+    height:100%;}
+    
+body{
+    text-align:center;
+    font-family: "Raleway";
+    }
+
+#main{
+    max-width:100%;
+    min-height:100%;
+    margin:0 auto;
+    position:relative;
+    }
+    
+footer{
+    background:#ccc;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding-top:50px;
+    height: 100px;
+    }

@@ -1,3 +1,7 @@
+*{
+    font-family: "Raleway";
+}
+
 /*raccourcis*/
 
 .flexCentre {
@@ -14,6 +18,7 @@
 
 body{
     margin: 0px;
+    max-width: 100%;
 }
 
 .backgris{
@@ -33,9 +38,15 @@ body{
 
 .Reservia{
     display: flex;
-    width: 150px;
-    height: 50px;
     margin: 10px;
+    margin-left: 1,5%;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+.Reservia img{
+    height: 60px;
+    width: 150px;
 }
 
 /*Menu*/
@@ -50,7 +61,7 @@ body{
     display: flex;
     position: absolute;
     justify-content: space-around;
-    list-style: none;
+    list-style-image: none;
     margin: 0px;
     padding: 0px;
 }
@@ -89,9 +100,10 @@ body{
     font-style: italic;
 }
 
-#libellé{
+.libellé{
     line-height: initial;
     line-height: 3px;
+    margin-left: 2%;
 }
 
 /*Barre de recherche*/
@@ -101,6 +113,10 @@ body{
     width: 50px;
     border-radius: 10px 0 0 10px;
   }
+
+.BDR{
+    margin-left: 2%;
+}
 
 .bordureSearch {
     width: 400px;
@@ -128,14 +144,20 @@ body{
     border-radius: 0 10px 10px 0;
 }
 
+.buttonSearch:hover{
+    color: #0065fc;
+    background-color: #f2f2f2;
+}
+
 /*Filtres*/
 
 .Filtres{
     display: flex;
     align-items: center;
-    width: fit-content;
     margin-top: 50px;
     margin-bottom: 40px;
+    justify-content: flex-start;
+    margin-left: 2%;
 }
 
 .titrefiltre{
@@ -150,6 +172,30 @@ body{
     border-radius: 30px;
     border: 2px solid #f2f2f2;
     height: 50px;
+}
+
+.Economique:hover {
+    color: #0065fc;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.Animaux:hover {
+    color: #0065fc;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.Romantique:hover {
+    color: #0065fc;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.Familial:hover {
+    color: #0065fc;
+    background-color: #f2f2f2;
+    cursor: pointer;
 }
 
 .filtreTexte{
@@ -185,6 +231,7 @@ body{
     font-size: 15px;
     font-style: italic;
     font-family: "raleway";
+    margin-left: 2%;
 }
 
 .petit i{
@@ -202,11 +249,41 @@ body{
 
 /*Boite 1*/
 
+.SecHP{
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+    justify-content: space-between;
+}
+.HebM{
+    display: flex;
+    position: static;
+    justify-content: flex-start;
+    margin-left: 20px;
+
+}
+
+.Heberg{
+    border-radius: 10px;
+    height: 570px;
+    width: 65%;
+    padding: 30px;
+    padding-top: 15px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
 .Bloc1, .Bloc2{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+
+.Bloc2{
+    display: flex;
+    margin-top: 30px;
 }
 
 .boite1{
@@ -214,14 +291,18 @@ body{
     flex-direction: column;
     background-color: white;
     height: 150px;
-    width: 230px;
+    width: 30%;
     border: solid white outset;
     border-radius: 20px;
     border-width: 5px;
-    margin: 25px;
     padding: 5px;
     padding-bottom: 20px;
+    margin: 15px;
+}
 
+.boite1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .Enonce1, .Enonce2{
@@ -251,37 +332,42 @@ body{
     margin: 0;
 }
 
+.Enonce1 i{
+    color: #0065fc;
+}
+
+.Enonce2 i{
+    color: #0065fc;
+}
+
 .img1, .img2{
     display: flex;
     justify-content: center;
 }
 
-.Heberg{
-    flex: 2;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    height: 570px;
-}
-
 .affich{
     font-weight: bold;
+    cursor: pointer;
+    margin: 0px;
     margin-left: 30px;
+    margin-top: 30px;
 }
 
 /*Les plus populaires*/
 
+
 .LPPOP{
-    flex: 1;
-    margin: 20px;
     padding: 20px;
     border-radius: 10px;
     height: 570px;
+    width: 32%;
+    box-sizing: border-box;
 }
 
 .lpp{
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0;
     margin-top: 18px;
     margin-bottom: 15px;
@@ -289,26 +375,29 @@ body{
 
 .lpp h3{
     margin: 0;
-    margin-right: 240px;
 }
 
 .boite2{
     display: flex;
     flex-direction: row;
     background-color: white;
-    height: 120px;
+    height: 115px;
     width: 380px;
-    border: solid white outset;
     border-radius: 20px;
     border-width: 5px;
     margin: 18px;
-    padding: 10px;
+    padding: 7px;
     padding-bottom: 20px;
 }
 
+.boite2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .img2 img{
-    border-radius: 15px 0px 0px 15px;
-    height: 130px;
+    border-radius: 20px 0px 0px 20px;
+    height: 127px;
     width: 180px;
     margin: 0;
 }
@@ -330,7 +419,8 @@ body{
 /*Activités à Marseille*/
 
 .ActM{
-    margin-left: 20px;
+    margin-left: 2%;
+    margin-top: 5%;
 }
 
 .AM{
@@ -340,22 +430,23 @@ body{
     width: 100%;
     padding: 20px;
     margin-bottom: 50px;
-    padding-left: 0px;
+    margin: 0px;
+    padding-top: 0px;
+    box-sizing: border-box;
 }
 
 .GPic{
     background-color: white;
     height: 350px;
-    width: 300px;
+    width: 100%;
     border: solid white none;
     box-shadow: #f2f2f2 3px 3px;
     border-radius: 15px 15px 0px 0px;
-
 }
 
 .pic2{
     height: 170px;
-    width: 300px;
+    width: 100%;
     border: solid white none;
     box-shadow: #f2f2f2 3px 3px;
     border-radius: 15px 15px 0px 0px;
@@ -363,7 +454,7 @@ body{
 
 .pic3{
     height: 110px;
-    width: 300px;
+    width: 100%;
     border: solid white none;
     box-shadow: #f2f2f2 3px 3px;
     border-radius: 15px 15px 0px 0px;
@@ -371,7 +462,7 @@ body{
 
 .pic4{
     height: 140px;
-    width: 300px;
+    width: 100%;
     border: solid white none;
     box-shadow: #f2f2f2 3px 3px;
     border-radius: 15px 15px 0px 0px;
@@ -379,32 +470,38 @@ body{
 
 .GPic img{
     height: 350px;
-    width: 300px;
+    width: 100%;
     border-radius: 15px 15px 0px 0px;
 }
 
 .pic2 img{
     height: 180px;
-    width: 300px;
+    width: 100%;
     border-width: 5px;
     border-radius: 15px 15px 0px 0px;
 }
 
 .pic3 img{
     height: 110px;
-    width: 300px;
+    width: 100%;
     border-radius: 15px 15px 0px 0px;
 }
 
 .pic4 img{
     height: 140px;
-    width: 300px;
+    width: 100%;
     border-radius: 15px 15px 0px 0px;
 }
 
 .boite3{
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+
+.boite3:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .Enonce3{
@@ -424,20 +521,43 @@ body{
 .LD{
     display: flex;
     flex-direction: row;
+    width: 25%;
+    margin: 1%;
 }
 
 .LD1, .LD2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 25%;
+    margin: 1%;
 }
 
 /*Le footer*/
 
 .contenu-footer{
-    background-color: #f2f2f2;
-    bottom:0;
-    width:100%;
-    padding-top:50px;
-    height: 600px;
+    height: 300px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.footer-services1{
+    height: 150px;
+    margin-left: 5%;
+}
+
+.footer-services{
+    height: 150px;
+}
+
+.footer-services2{
+    height: 150px;
+    padding-right: 30%;
+}
+
+/* Media queries 
+@media screen and (max-width: ;) {
+    
 }
